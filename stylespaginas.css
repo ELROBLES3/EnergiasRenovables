@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.general{
+    width:100%;
+    height: 800px;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4682B4;
+}
+.card {
+    position: relative;
+    right: 1%;
+    float: right;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front {
+   transform: perspective(600px) rotateY(0deg);
+   box-shadow: 0 5px 10px #000;
+}
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3 {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px)rotateY(180deg);
+    background: rgb(3,35,54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px #000;
+}
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height:50px ;
+}
+.card .back .link a {
+    color: #f3f3f3;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+.texto{
+    position: relative;
+    left:3%;
+    top: 3%;
+    width: 50%;
+    height: 343px;
+}
+h1{
+    color: #fff;
+    font-size:35px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+.introducion{
+    font-size: 25px;
+    padding: 1%;
+    color: #fff;
+}
+.card-container{
+    position: relative;
+    left:90%;
+    top:-80%;
+}
+.conjunto{
+    position: relative;
+    top:-110%;
+    right:15%;
+}
+.cardsola{
+    position: relative;
+    top: -200%;
+    left: 70%;
+}
+/*pajina2*/
+ /* Estilos básicos para el carrusel */
+/* Estilos básicos para el carrusel */
+.body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4682B4
+  }
+  
+  .carousel {
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    position: relative;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .carousel-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    box-shadow: 0 5px 10px #000;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+  }
+  
+  .carousel-text h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .carousel-text p {
+    margin: 5px 0 0;
+    font-size: 16px;
+  }
+  
+  /* Flechas de navegación */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .imajen{
+    width:100%;
+    height:100%;
+  }
+  .carusel1{
+    position: relative;
+    left: 5%;
+    top: 5%;
+    width:30%;
+    height:20%;
+  }
+  h4{
+    color: #fff;
+    font-size:30px;
+  }
+  .titulo{
+    position: relative;
+    left: 30%;
+    width:70%;
+    height:100px;
+    padding-top:1%;
+  }
+.texto{
+    color: #fff;
+    font-size: 40px;
+}
+.carusel2{
+    position: relative;
+    left: 50%;
+    top:180px;
+    width: 40%;
+}
+.carusel3{
+    position: relative;
+    left: 5%;
+    top:0;
+    width: 40%;
+}
